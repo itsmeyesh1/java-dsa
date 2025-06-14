@@ -12,9 +12,9 @@ class Solution {
         {
             if(!set.contains(it-1)){
                  int count=1;
-                int currNum=it; //it means element bro.
-                while(set.contains(currNum+1)) {
-                    currNum++;
+                int x=it; //it means element bro.
+                while(set.contains(x+1)) {
+                    x=x+1;
                     count=count+1;
                 }
                 longest=Math.max(longest,count);
